@@ -1,0 +1,48 @@
+.enter-page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.21);
+}
+
+.enter-page .btn-component {
+	font-size: var(--font-3xl);
+	padding: 10px 45px;
+}
+
+.enter-page h1 {
+	font-size: var(--font-7xl);
+	color: var(--text-normal);
+	font-family: var(--system-font), var(--text-font);
+}
+
+@media (max-width: 768px) {
+	.enter-page .btn-component {
+		font-size: var(--font-xl);
+		padding: 8px 30px;
+	}
+
+	.enter-page h1 {
+		font-size: var(--font-4xl);
+	}
+}
+
+@media (max-width: 480px) {
+	.enter-page {
+		gap: 30px;
+		padding: 0 15px;
+	}
+
+	.enter-page .btn-component {
+		font-size: var(--font-lg);
+		padding: 6px 25px;
+	}
+
+	.enter-page h1 {
+		font-size: var(--font-3xl);
+		text-align: center;
+	}
+}
