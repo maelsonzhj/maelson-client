@@ -3,7 +3,7 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"homepage": "https://a1exandermalikov.github.io/maelson",
+	"homepage": "https://maelsonzhj.github.io/maelson-client",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
