@@ -1,7 +1,8 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-	base: '/maelson-client/',
 	plugins: [react()],
+	base: '/maelson-client/',
 })
