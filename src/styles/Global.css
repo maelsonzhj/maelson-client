@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 	color: var(--text-muted);
 	font-family: var(--text-font);
-	user-select: none;	
+	user-select: none;
 	-webkit-user-drag: none;
 }
 
@@ -34,11 +34,13 @@ body {
 	background-color: var(--color-950);
 	width: 100svw;
 	height: 100svh;
+	font-size: 16px;
 }
 
 .page {
 	display: flex;
 	flex-direction: column;
+	padding: 2rem;
 }
 
 /* Плавное исчезновение */
@@ -55,4 +57,52 @@ body {
 
 .icon {
 	color: var(--color-400);
+	font-size: 24px;
+}
+
+/* ---------------- АДАПТИВНОСТЬ ---------------- */
+
+/* Планшеты: до 1024px */
+@media (max-width: 1024px) {
+	body {
+		font-size: 15px;
+	}
+
+	.page {
+		padding: 1.5rem;
+	}
+
+	.icon {
+		font-size: 22px;
+	}
+}
+
+/* Смартфоны: до 768px */
+@media (max-width: 768px) {
+	body {
+		font-size: 14px;
+	}
+
+	.page {
+		padding: 1rem;
+	}
+
+	.icon {
+		font-size: 20px;
+	}
+}
+
+/* Маленькие телефоны: до 480px */
+@media (max-width: 480px) {
+	body {
+		font-size: 13px;
+	}
+
+	.page {
+		padding: 0.75rem;
+	}
+
+	.icon {
+		font-size: 18px;
+	}
 }

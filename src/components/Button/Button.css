@@ -9,28 +9,26 @@
 	place-items: center;
 	text-decoration: none;
 	width: max-content;
+	font-size: var(--font-2xl); /* Добавлено для читаемости */
 }
 
-/* Default — приглушённая серая */
+/* Цветовые стили */
 .btn-default {
 	background-color: var(--color-stone-800);
 	color: var(--color-stone-200);
 }
 
-/* Secondary — нейтральный, мягкий */
 .btn-secondary {
 	background-color: var(--color-stone-700);
 	color: var(--color-stone-100);
 }
 
-/* Primary — акцентная, красная */
 .btn-primary {
 	background-color: var(--color-stone-100);
 	color: var(--color-stone-950);
 	font-weight: 700;
 }
 
-/* DISABLED */
 .btn-disabled {
 	background-color: var(--color-stone-800);
 	color: var(--color-stone-500);
@@ -38,14 +36,28 @@
 	opacity: 0.7;
 }
 
-/* SAFE */
 .btn-safe {
 	background-color: var(--color-lime-700);
 	color: var(--color-lime-50);
 }
 
-/* DANGER */
 .btn-danger {
 	background-color: var(--color-red-600);
 	color: var(--color-red-50);
+}
+
+/* 📱 Планшеты */
+@media (max-width: 768px) {
+	.btn-component {
+		padding: 7px 20px;
+		font-size: var(--font-xl);
+	}
+}
+
+/* 📱📱 Мобильные */
+@media (max-width: 480px) {
+	.btn-component {
+		padding: 6px 16px;
+		font-size: var(--font-lg);
+	}
 }
